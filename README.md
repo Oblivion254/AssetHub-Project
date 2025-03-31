@@ -1,11 +1,12 @@
 # Running the project
 
 ## Install necessary packages at Frontend and Backend
-> Run _npm i_ at /client and /server directories
+ Run _npm i_ at /client and /server directories
+> npm i
 
 ## Create Database using PGAdmin
  Create a database at pgadmin and add that in database URL at .env file
-> postgresql://postgres:vickyaadhi@localhost:5432/**your_database_name**?schema=public
+> postgresql://postgres:**_username_**@localhost:5432/**_your_database_name_**?schema=public
 
  Migrate the database using ORM at /server
 > npx prisma migrate dev --name init
